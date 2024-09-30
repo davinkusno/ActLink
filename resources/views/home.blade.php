@@ -30,7 +30,7 @@
 <!-- Header Section -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{{ route('home') }}">
-        <img src="{{ asset('applink_.png') }}" alt="Applink Logo" style="height: 40px;">
+        <img src="{{ asset('applink_.png') }}" alt="Applink Logo" style="height: 40px; width: auto;">
         Actlink
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,11 +51,21 @@
 <!-- Hero Section -->
 <section class="hero text-center">
     <div class="container">
-        <h1 class="display-4">Join a Community Service Event Today!</h1>
-        <p class="lead">Actlink is the platform to connect volunteers with meaningful service opportunities. Find an event that makes a difference in your community.</p>
-        <a class="btn btn-primary btn-lg" href="{{ route('events') }}">Browse Events</a>
+        <div class="row align-items-center">
+            <!-- Logo Column -->
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="{{ asset('applink_.png') }}" alt="Applink Logo" style="max-height: 100%; width: auto;" class="img-fluid">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-8">
+                <h1 class="display-4">Join a Community Service Event Today!</h1>
+                <p class="lead">Actlink is the platform to connect volunteers with meaningful service opportunities. Find an event that makes a difference in your community.</p>
+                <a class="btn btn-primary btn-lg" href="{{ route('events') }}">Browse Events</a>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <!-- Event Grid Section -->
 <section class="container my-5">
